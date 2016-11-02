@@ -65,14 +65,14 @@ export KCONFIG_NOTIMESTAMP=true
 export ARCH=arm64;
 export SUB_ARCH=arm64;
 
-# G920T
+# G920P
 if [ "$TARGET" = "G920P" ] ; then
-	export KERNEL_CONFIG="custom_defconfig";
+	export KERNEL_CONFIG="exynos7420-zerofltespr_defconfig";
 fi;
 
-# G925T
+# G920PP
 if [ "$TARGET" = "G920PP" ] ; then
-	export KERNEL_CONFIG="custom-zeroltetmo";
+	export KERNEL_CONFIG="exynos7420-zeroltespr_defconfig";
 fi;
 
 # build script
